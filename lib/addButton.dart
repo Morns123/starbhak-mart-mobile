@@ -95,7 +95,6 @@ class _AddButtonState extends State<AddButton> {
           elevation: 3,
           borderRadius: BorderRadius.circular(30),
           child: Container(
-            width: 300,
             height: 45,
             child: TextField(
               keyboardType: TextInputType.text,
@@ -136,7 +135,6 @@ class _AddButtonState extends State<AddButton> {
           elevation: 3,
           borderRadius: BorderRadius.circular(30),
           child: Container(
-            width: 300,
             height: 45,
             child: TextField(
               keyboardType: TextInputType.text,
