@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:starbhak_mart/account.dart';
 import 'package:starbhak_mart/addData.dart';
 import 'package:starbhak_mart/cart.dart';
 import 'package:starbhak_mart/home.dart';
@@ -65,6 +66,7 @@ class _NavState extends State<Nav> {
     Home(),
     Cart(),
     AddData(),
+    Acc(),
   ];
 
   bool _showBottomNavBar = true;
@@ -84,6 +86,7 @@ class _NavState extends State<Nav> {
                 Icon(Icons.home_outlined, size: 30),
                 Icon(Icons.shopping_cart_outlined, size: 30),
                 Icon(Icons.addchart_outlined, size: 30),
+                Icon(Icons.person_outline, size: 30),
               ],
               onTap: (int index) {
                 setState(() {

@@ -42,10 +42,10 @@ class _AccState extends State<Acc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        margin: EdgeInsets.fromLTRB(20, 30, 20, 20),
-        child: Column(
-          children: <Widget>[
+      appBar: AppBar(
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
             Flexible(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,7 +54,128 @@ class _AccState extends State<Acc> {
                       Icons.arrow_back_ios_new_outlined, () {})
                 ],
               ),
-            )
+            ),
+            Text('Account'),
+          ],
+        ),
+      ),
+      body: Container(
+        margin: EdgeInsets.fromLTRB(20, 30, 20, 20),
+        child: Column(
+          children: <Widget>[
+            Padding(padding: EdgeInsets.only(top: 20)),
+            Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    width: 50,
+                    height: 50,
+                    child: Image(image: AssetImage('profile.png')),
+                  ),
+                ),
+                Padding(padding: EdgeInsets.only(left: 10)),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Mordecai Nathanael Sirait',
+                      style: TextStyle(fontSize: 10),
+                    ),
+                    Padding(padding: EdgeInsets.all(2)),
+                    Text(
+                      'Pemrograman Perangkat Lunak dan Gim',
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            Padding(padding: EdgeInsets.only(top: 10)),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(
+                  'Lihat Profile',
+                  style: TextStyle(fontSize: 10),
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                  size: 10,
+                ),
+              ],
+            ),
+            Padding(padding: EdgeInsets.only(top: 10)),
+            Divider(
+              height: 1,
+              color: Colors.grey,
+            ),
+            Padding(padding: EdgeInsets.only(top: 20)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.book,
+                      size: 10,
+                    ),
+                    Padding(padding: EdgeInsets.only(left: 20)),
+                    Text(
+                      'Syarat & Ketentuan',
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  ],
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                )
+              ],
+            ),
+            Padding(padding: EdgeInsets.only(top: 20)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.book,
+                      size: 10,
+                    ),
+                    Padding(padding: EdgeInsets.only(left: 20)),
+                    Text(
+                      'Tentang',
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  ],
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                )
+              ],
+            ),
+            Padding(padding: EdgeInsets.only(top: 20)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.offline_bolt,
+                      size: 10,
+                    ),
+                    Padding(padding: EdgeInsets.only(left: 20)),
+                    Text(
+                      'Logout',
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  ],
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                )
+              ],
+            ),
           ],
         ),
       ),
