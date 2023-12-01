@@ -66,10 +66,10 @@ flutter:
   - assets/logo.png
   - assets/logo2.png
   - assets/logo3.png
-  - assets/drink.png
-  - assets/drink2.png
-  - assets/food.png
-  - assets/food2.png
+  - assets/drink.jpg
+  - assets/drink2.jpg
+  - assets/food.jpg
+  - assets/food2.jpg
   - assets/profile.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
