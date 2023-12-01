@@ -38,6 +38,7 @@ dependencies:
   another_flutter_splash_screen: ^1.2.0
   curved_navigation_bar: ^1.0.3
   dropdown_search: ^5.0.6
+  image_picker: ^1.0.4
 
 dev_dependencies:
   flutter_test:
