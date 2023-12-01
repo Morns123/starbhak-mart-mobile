@@ -42,27 +42,25 @@ class _AccState extends State<Acc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Flexible(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  _buildIconButtonNextPage(
-                      Icons.arrow_back_ios_new_outlined, () {})
-                ],
-              ),
-            ),
-            Text('Account'),
-          ],
-        ),
-      ),
       body: Container(
         margin: EdgeInsets.fromLTRB(20, 30, 20, 20),
         child: Column(
           children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Flexible(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      _buildIconButtonNextPage(
+                          Icons.arrow_back_ios_new_outlined, () {})
+                    ],
+                  ),
+                ),
+                Text('Account'),
+              ],
+            ),
             Padding(padding: EdgeInsets.only(top: 20)),
             Row(
               children: [
