@@ -229,9 +229,9 @@ class _HomeState extends State<Home> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                _buildCategory('food2.jpg', 'All'),
-                _buildCategory('food2.jpg', 'Food'),
-                _buildCategory('drink2.jpg', 'Drink'),
+                _buildCategory('assets/food2.jpg', 'All'),
+                _buildCategory('assets/food2.jpg', 'Food'),
+                _buildCategory('assets/drink2.jpg', 'Drink'),
               ],
             ),
             Padding(
@@ -252,29 +252,29 @@ class _HomeState extends State<Home> {
                       mainAxisSpacing: 10.0,
                       children: <Widget>[
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                       ],
                     )
                   : GridView.count(
@@ -283,29 +283,29 @@ class _HomeState extends State<Home> {
                       mainAxisSpacing: 10.0,
                       children: <Widget>[
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                         _buildCategoryItem(
-                            'food2.jpg', 'Ramen', 'Rp.50.000,00'),
+                            'assets/food2.jpg', 'Ramen', 'Rp.50.000,00'),
                         _buildCategoryItem(
-                            'drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
+                            'assets/drink2.jpg', 'Green Tea', 'Rp.10.000,00'),
                       ],
                     ),
             ),

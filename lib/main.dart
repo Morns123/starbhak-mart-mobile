@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:starbhak_mart/splashGif.dart';
-// import 'package:starbhak_mart/splashPng.dart';
+import 'package:starbhak_mart/splashPng.dart';
 
 void main() {
   runApp(const MyApp());

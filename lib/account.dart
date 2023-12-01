@@ -71,7 +71,7 @@ class _AccState extends State<Acc> {
                   child: Container(
                     width: 50,
                     height: 50,
-                    child: Image(image: AssetImage('profile.png')),
+                    child: Image(image: AssetImage('assets/profile.png')),
                   ),
                 ),
                 Padding(padding: EdgeInsets.only(left: 10)),

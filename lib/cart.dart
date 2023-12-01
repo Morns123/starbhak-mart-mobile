@@ -192,7 +192,7 @@ class _CartState extends State<Cart> {
             Column(
               children: <Widget>[
                 _buildDetailData(
-                    'food2.jpg',
+                    'assets/food2.jpg',
                     'Ramen Medium',
                     'Rp.50.000,00',
                     '1',
@@ -201,7 +201,7 @@ class _CartState extends State<Cart> {
                     Icons.delete_outlined),
                 Padding(padding: EdgeInsets.only(top: 30)),
                 _buildDetailData(
-                    'drink2.jpg',
+                    'assets/drink2.jpg',
                     'Green Tea',
                     'Rp.10.000,00',
                     '2',
@@ -210,7 +210,7 @@ class _CartState extends State<Cart> {
                     Icons.delete_outlined),
                 Padding(padding: EdgeInsets.only(top: 30)),
                 _buildDetailData(
-                    'food2.jpg',
+                    'assets/food2.jpg',
                     'Ramen Small',
                     'Rp.30.000,00',
                     '1',
