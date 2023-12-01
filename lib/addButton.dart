@@ -1,5 +1,5 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:starbhak_mart/account.dart';
 import 'package:starbhak_mart/addData.dart';
 import 'package:dropdown_search/dropdown_search.dart';
@@ -12,6 +12,24 @@ class AddButton extends StatefulWidget {
 }
 
 class _AddButtonState extends State<AddButton> {
+  late ImagePicker _imagePicker;
+  TextEditingController _imagePathController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    _imagePicker = ImagePicker();
+  }
+
+  Future<void> _getImage() async {
+    final image = await _imagePicker.pickImage(source: ImageSource.gallery);
+    if (image != null) {
+      setState(() {
+        _imagePathController.text = image.path;
+      });
+    }
+  }
+
   Widget _buildIconButton(IconData icon, VoidCallback onTap) {
     return Flexible(
       flex: 1,
@@ -136,6 +154,48 @@ class _AddButtonState extends State<AddButton> {
         Material(
           elevation: 3,
           borderRadius: BorderRadius.circular(30),
+          child: Container(
+            height: 50,
+            child: GestureDetector(
+              onTap: _getImage,
+              child: AbsorbPointer(
+                child: TextField(
+                  controller: _imagePathController,
+                  decoration: InputDecoration(
+                    label: Text(text2),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildTextField3(String text, String text2) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.only(top: 20),
+        ),
+        Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            text,
+            style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(top: 5),
+        ),
+        Material(
+          elevation: 3,
+          borderRadius: BorderRadius.circular(30),
           child: DropdownSearch<String>(
             clearButtonProps: ClearButtonProps(isVisible: true),
             popupProps: PopupProps.menu(),
@@ -182,8 +242,8 @@ class _AddButtonState extends State<AddButton> {
               children: <Widget>[
                 _buildTextField('Nama Produk', 'Masukkan nama produk'),
                 _buildTextField('Harga', 'Masukkan harga'),
-                _buildTextField2('Kategori', 'Menu'),
-                _buildTextField('Image', 'Chose file'),
+                _buildTextField3('Kategori', 'Menu'),
+                _buildTextField2('Image', 'Chose file'),
                 Padding(padding: EdgeInsets.only(top: 20)),
                 ClipRRect(
                   child: Stack(
