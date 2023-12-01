@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:starbhak_mart/account.dart';
 import 'package:starbhak_mart/addData.dart';
+import 'package:dropdown_search/dropdown_search.dart';
 
 class AddButton extends StatefulWidget {
   const AddButton({super.key});
@@ -95,7 +97,7 @@ class _AddButtonState extends State<AddButton> {
           elevation: 3,
           borderRadius: BorderRadius.circular(30),
           child: Container(
-            height: 45,
+            height: 50,
             child: TextField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
@@ -134,11 +136,12 @@ class _AddButtonState extends State<AddButton> {
         Material(
           elevation: 3,
           borderRadius: BorderRadius.circular(30),
-          child: Container(
-            height: 45,
-            child: TextField(
-              keyboardType: TextInputType.text,
-              decoration: InputDecoration(
+          child: DropdownSearch<String>(
+            clearButtonProps: ClearButtonProps(isVisible: true),
+            popupProps: PopupProps.menu(),
+            items: ["Makanan", "Minuman"],
+            dropdownDecoratorProps: DropDownDecoratorProps(
+              dropdownSearchDecoration: InputDecoration(
                 label: Text(
                   text2,
                   style: TextStyle(fontSize: 13),
@@ -146,9 +149,9 @@ class _AddButtonState extends State<AddButton> {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                suffixIcon: Icon(Icons.arrow_drop_down),
               ),
             ),
+            onChanged: print,
           ),
         ),
       ],
@@ -179,7 +182,7 @@ class _AddButtonState extends State<AddButton> {
               children: <Widget>[
                 _buildTextField('Nama Produk', 'Masukkan nama produk'),
                 _buildTextField('Harga', 'Masukkan harga'),
-                _buildTextField2('Kategori penduduk', 'Makanan'),
+                _buildTextField2('Kategori', 'Menu'),
                 _buildTextField('Image', 'Chose file'),
                 Padding(padding: EdgeInsets.only(top: 20)),
                 ClipRRect(
