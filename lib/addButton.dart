@@ -115,7 +115,7 @@ class _AddButtonState extends State<AddButton> {
           elevation: 3,
           borderRadius: BorderRadius.circular(30),
           child: Container(
-            height: 50,
+            height: 60,
             child: TextField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
@@ -155,7 +155,7 @@ class _AddButtonState extends State<AddButton> {
           elevation: 3,
           borderRadius: BorderRadius.circular(30),
           child: Container(
-            height: 50,
+            height: 60,
             child: GestureDetector(
               onTap: _getImage,
               child: AbsorbPointer(
